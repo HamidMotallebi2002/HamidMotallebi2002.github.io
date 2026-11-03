@@ -151,3 +151,24 @@ h3 { font-size: 20px; line-height: 1.3; margin: 0 0 8px; }
   .figure { break-inside: avoid; }
   a { color: black; }
 }
+
+/* Direct access to the undergraduate report from the home page */
+.featured-report {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  gap: 12px 24px; padding: 17px 19px; margin-top: 23px;
+  border: 1px solid var(--rule); border-left: 4px solid var(--navy); background: #fafbfc;
+}
+.featured-report-copy { display: grid; gap: 3px; min-width: 0; flex: 1 1 290px; }
+.featured-report-copy strong { color: var(--navy-dark); font-size: 17px; line-height: 1.35; }
+.featured-report-copy span { color: var(--secondary); font-size: 15px; line-height: 1.4; }
+.report-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+.report-actions .link-plain { margin: 0; font-size: 15px; line-height: 1.3; padding: 10px 14px; white-space: normal; text-align: center; }
+.project-details-link { display: inline-block; margin-bottom: 12px; }
+.project-report-actions { margin: 1px 0 7px; }
+.project-row .pdf-note { font-size: 14px; color: var(--muted); line-height: 1.4; margin: 6px 0 0; font-weight: 400; }
+@media (max-width: 580px) {
+  .featured-report { padding: 14px; }
+  .report-actions { width: 100%; }
+  .report-actions .link-plain { flex: 1 1 140px; }
+}
+@media print { .featured-report .report-actions, .project-report-actions { display: none; } }
