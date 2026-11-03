@@ -1,123 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Technical research report by Hamid Motallebi on thermodynamic modeling, validation and optimization of an R1234yf ejector-expansion refrigeration cycle. Includes figures and a complete 72-page project report.">
-  <meta name="theme-color" content="#17334f">
-  <title>R1234yf Ejector-Expansion Refrigeration | Hamid Motallebi</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Technical research report by Hamid Motallebi on thermodynamic modeling, validation and optimization of an R1234yf ejector-expansion refrigeration cycle. Includes figures and a complete 72-page project report." name="description"/>
+<meta content="#17334f" name="theme-color"/>
+<title>R1234yf Ejector-Expansion Refrigeration | Hamid Motallebi</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-upper">
-      <div><a class="header-name" href="index.html">Hamid Motallebi</a><span class="header-affiliation">School of Mechanical Engineering · University of Tehran</span></div>
-      <span class="header-context">Undergraduate Research Report</span>
-    </div>
-    <div class="header-rule"></div>
-    <nav class="container primary-nav" aria-label="Project navigation">
-      <a href="index.html">Portfolio</a><a href="#abstract">Abstract</a><a href="#methods">Methodology</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#full-report">Full Report</a>
-    </nav>
-  </header>
-  <main>
-    <div class="container breadcrumb"><a href="index.html">Academic Research Portfolio</a> / Selected Projects / R1234yf Ejector</div>
-    <div class="container document-top project-intro">
-      <p class="overline">Undergraduate Specialization Project · 31 July 2024</p>
-      <h1 class="project-title">Thermodynamic Design and Optimization of a Vapor-Compression Refrigeration Cycle with Ejector Expansion</h1>
-      <p class="lead">A numerical investigation of an R1234yf two-phase ejector refrigeration cycle, including thermodynamic simulation, literature-based validation, regression-assisted optimization and preliminary ejector geometry design.</p>
-      <p><a class="link-plain filled" href="Hamid_Motallebi_BSc_Project.pdf" target="_blank" rel="noopener">View Full Report (PDF)</a><a class="link-plain" href="Hamid_Motallebi_BSc_Project.pdf" download>Download Report</a></p>
-      <div class="document-ident" aria-label="Project summary">
-        <div><span class="metadata-label">Working Fluid</span><span class="metadata-value">R1234yf</span></div>
-        <div><span class="metadata-label">Computational Tools</span><span class="metadata-value">MATLAB · REFPROP · SolidWorks</span></div>
-        <div><span class="metadata-label">Submitted Report</span><span class="metadata-value">72 pages · July 2024</span></div>
-      </div>
-    </div>
-
-    <section class="container document-section" id="abstract">
-      <div class="section-heading"><span class="section-index">01</span><h2>Abstract and Research Context</h2></div>
-      <div class="project-overview">
-        <div class="prose">
-          <p>This undergraduate project examines the potential of an ejector-expansion vapor-compression refrigeration cycle to recover part of the energy lost during conventional throttling. The system is modeled with R1234yf as the working refrigerant, and its performance is evaluated through the coefficient of performance (COP) and volumetric cooling capacity (VCC).</p>
-          <p>The study develops an iterative thermodynamic model using MATLAB with thermophysical properties obtained from REFPROP. Operating-condition sensitivity is investigated for condenser and evaporator temperatures and for an ejector-related pressure-difference parameter. Calculated results are compared with published reference data.</p>
-          <p>A regression-tree predictor and genetic algorithm are subsequently used to explore favorable operating conditions. The final design stage determines preliminary ejector dimensions using literature-based correlations and represents the resulting geometry in SolidWorks.</p>
-          <p><strong>Research objective:</strong> Assess refrigeration-cycle performance, identify favorable numerical operating conditions and establish an initial geometric design for a two-phase ejector.</p>
-        </div>
-        <aside class="report-facts" aria-label="Report information">
-          <h2>Report Details</h2>
-          <dl>
-            <dt>Researcher</dt><dd>Hamid Motallebi</dd>
-            <dt>Supervisor</dt><dd>Dr. Behrang Sajadi</dd>
-            <dt>Institution</dt><dd>School of Mechanical Engineering, University of Tehran</dd>
-            <dt>Report Type</dt><dd>Undergraduate Specialization Project</dd>
-            <dt>Submission Date</dt><dd>31 July 2024</dd>
-            <dt>Primary Methods</dt><dd>Thermodynamic-cycle modeling, parametric analysis, numerical optimization</dd>
-          </dl>
-        </aside>
-      </div>
-    </section>
-
-    <section class="container document-section" id="methods">
-      <div class="section-heading"><span class="section-index">02</span><h2>Methodology</h2></div>
-      <div class="method-row">
-        <div class="method-mark">I.</div>
-        <div><h3>Cycle Formulation</h3><p>Governing thermodynamic relations and one-dimensional ejector-component assumptions were established. Refrigerant state properties were evaluated through the REFPROP interface in MATLAB.</p></div>
-      </div>
-      <div class="method-row">
-        <div class="method-mark">II.</div>
-        <div><h3>Iterative Numerical Solution and Validation</h3><p>The simulation iterates on entrainment ratio and refrigerant state conditions to satisfy convergence requirements. COP predictions were compared with data digitized from the reference literature.</p></div>
-      </div>
-      <div class="method-row">
-        <div class="method-mark">III.</div>
-        <div><h3>Performance Modeling and Optimization</h3><p>A regression-tree model was trained in MATLAB to estimate COP as a function of condenser temperature, evaporator temperature and the pressure-difference parameter. Five-fold cross-validation was used to evaluate prediction error, followed by a genetic-algorithm search.</p></div>
-      </div>
-      <div class="method-row">
-        <div class="method-mark">IV.</div>
-        <div><h3>Preliminary Ejector Geometry</h3><p>Nozzle, mixing-section and diffuser dimensions were estimated using published correlations and design charts. The resulting geometry and drawings were modeled in SolidWorks.</p></div>
-      </div>
-      <p class="notes">Methodological scope: the submitted report documents a thermodynamic-cycle model and a preliminary component design. It does <strong>not</strong> document a resolved CFD field simulation, fabrication, or completed experimental testing of the ejector.</p>
-    </section>
-
-    <section class="container document-section" id="findings">
-      <div class="section-heading"><span class="section-index">03</span><h2>Selected Computational Findings</h2></div>
-      <p>The values below are reported numerical outcomes from the submitted undergraduate report and should not be interpreted as experimental measurements.</p>
-      <table class="result-table" aria-label="Selected computational findings from the project report">
-        <caption>Table 1. Summary of selected modeling outputs and observations.</caption>
-        <thead><tr><th scope="col">Item</th><th scope="col">Reported result</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Model validation</strong></td><td>Maximum relative COP error of approximately 4% compared with reference data; around 90% of evaluated points had an error below 1% (report p. 41).</td></tr>
-          <tr><td><strong>Operating-parameter study</strong></td><td>Model sensitivity assessed for condenser temperature, evaporator temperature and ejector pressure difference using COP and VCC outputs (pp. 36–39).</td></tr>
-          <tr><td><strong>Heat recuperation</strong></td><td>The modeled maximum COP change from adding a heat recuperator was approximately 2% within the investigated conditions (p. 42).</td></tr>
-          <tr><td><strong>Regression training grid</strong></td><td>A parameter grid containing 86,100 input combinations was specified for model training (p. 28).</td></tr>
-          <tr><td><strong>Optimization output</strong></td><td>The report gives a model-predicted maximum COP of 8.68 for its selected bounds and assumptions (p. 47).</td></tr>
-          <tr><td><strong>Preliminary CAD design</strong></td><td>Two-phase ejector geometry constructed in SolidWorks from estimated section dimensions and angles (pp. 50–51).</td></tr>
-        </tbody>
-      </table>
-      <p class="notes">All performance figures depend on the model formulation, numerical assumptions and input conditions described in the PDF. Validation uses published data rather than new laboratory measurements.</p>
-    </section>
-
-    <section class="container document-section" id="figures">
-      <div class="section-heading"><span class="section-index">04</span><h2>Selected Figures and Engineering Results</h2></div>
-      <p>The following figures are reproduced from my submitted report. Figure numbers and printed page references follow the source report; the full PDF is linked below.</p>
-      <div class="figure-grid">
-        <figure class="figure"><div class="figure-media"><img src="cop_pressure.webp" alt="Calculated coefficient of performance against ejector pressure difference" loading="lazy"></div><figcaption><strong>Figure 14.</strong> Modeled COP response to pressure-difference variation (report p. 37).</figcaption></figure>
-        <figure class="figure"><div class="figure-media"><img src="cop_condenser.webp" alt="Calculated coefficient of performance as condenser temperature varies" loading="lazy"></div><figcaption><strong>Figure 16.</strong> Modeled COP as a function of condenser temperature (report p. 38).</figcaption></figure>
-        <figure class="figure"><div class="figure-media"><img src="cop_evaporator.webp" alt="Calculated coefficient of performance as evaporator temperature varies" loading="lazy"></div><figcaption><strong>Figure 18.</strong> Modeled COP as a function of evaporator temperature (report p. 39).</figcaption></figure>
-        <figure class="figure"><div class="figure-media"><img src="validation_error.webp" alt="Relative error in modeled COP against a reference dataset" loading="lazy"></div><figcaption><strong>Figure 22.</strong> Relative error of calculated COP compared with published reference data (report p. 41).</figcaption></figure>
-        <figure class="figure"><div class="figure-media"><img src="recuperator_gain.webp" alt="Percentage COP change associated with adding a heat recuperator" loading="lazy"></div><figcaption><strong>Figure 25.</strong> Percentage COP change from adding a heat recuperator (report p. 42).</figcaption></figure>
-        <figure class="figure"><div class="figure-media"><img src="ejector_cad.webp" alt="SolidWorks preliminary geometry of a two-phase ejector" loading="lazy"></div><figcaption><strong>Figure 31.</strong> SolidWorks model of the preliminary two-phase ejector geometry (report p. 50).</figcaption></figure>
-      </div>
-    </section>
-
-    <section class="container document-section" id="full-report">
-      <div class="section-heading"><span class="section-index">05</span><h2>Complete Undergraduate Project Report</h2></div>
-      <div class="report-cta">
-        <p><strong>Thermodynamic Design and Optimization of a Vapor-Compression Refrigeration Cycle with Ejector Expansion.</strong> University of Tehran, July 2024, 72 pages.</p>
-        <p>The full document contains assumptions, governing equations, numerical procedures, comparison with published data, optimization, preliminary geometry, references and MATLAB code appendices.</p>
-        <p><a class="link-plain filled" href="Hamid_Motallebi_BSc_Project.pdf" target="_blank" rel="noopener">Open Full Report (PDF)</a><a class="link-plain" href="Hamid_Motallebi_BSc_Project.pdf" download>Download PDF</a></p>
-        <div class="reference-strip"><p><strong>Supervisor:</strong> Dr. Behrang Sajadi<br><strong>Researcher:</strong> Hamid Motallebi<br><strong>Correspondence:</strong> <a href="mailto:hamidmotallebi2002@gmail.com">hamidmotallebi2002@gmail.com</a></p></div>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Hamid Motallebi · Undergraduate Research Project</span><span><a href="index.html">Return to Academic Research Portfolio</a></span></div></footer>
+<header class="site-header">
+<div class="container header-upper">
+<div><a class="header-name" href="index.html">Hamid Motallebi</a><span class="header-affiliation">University of Tehran · Department of Mechanical Engineering</span><div aria-label="Contact links" class="header-contact"><a href="mailto:hamidmotallebi2002@gmail.com">Email</a><a href="https://www.linkedin.com/in/hamid-motallebi-405380208/" rel="noopener noreferrer" target="_blank">LinkedIn</a></div></div>
+<span class="header-context">Undergraduate Research Report</span>
+</div>
+<div class="header-rule"></div>
+<nav aria-label="Project navigation" class="container primary-nav">
+<a href="index.html">Portfolio</a><a href="#abstract">Abstract</a><a href="#methods">Methodology</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#full-report">Full Report</a>
+</nav>
+</header>
+<main>
+<div class="container breadcrumb"><a href="index.html">Academic Research Portfolio</a> / Selected Projects / R1234yf Ejector</div>
+<div class="container document-top project-intro">
+<p class="overline">Undergraduate Specialization Project · 31 July 2024</p>
+<h1 class="project-title">Thermodynamic Design and Optimization of a Vapor-Compression Refrigeration Cycle with Ejector Expansion</h1>
+<p class="lead">A numerical investigation of an R1234yf two-phase ejector refrigeration cycle, including thermodynamic simulation, literature-based validation, regression-assisted optimization and preliminary ejector geometry design.</p>
+<p><a class="link-plain filled" href="Hamid_Motallebi_BSc_Project.pdf" rel="noopener" target="_blank">View Full Report (PDF)</a><a class="link-plain" download="" href="Hamid_Motallebi_BSc_Project.pdf">Download Report</a></p>
+<div aria-label="Project summary" class="document-ident">
+<div><span class="metadata-label">Working Fluid</span><span class="metadata-value">R1234yf</span></div>
+<div><span class="metadata-label">Computational Tools</span><span class="metadata-value">MATLAB · REFPROP · SolidWorks</span></div>
+<div><span class="metadata-label">Submitted Report</span><span class="metadata-value">72 pages · July 2024</span></div>
+</div>
+</div>
+<section class="container document-section" id="abstract">
+<div class="section-heading"><span class="section-index">01</span><h2>Abstract and Research Context</h2></div>
+<div class="project-overview">
+<div class="prose">
+<p>This undergraduate project examines the potential of an ejector-expansion vapor-compression refrigeration cycle to recover part of the energy lost during conventional throttling. The system is modeled with R1234yf as the working refrigerant, and its performance is evaluated through the coefficient of performance (COP) and volumetric cooling capacity (VCC).</p>
+<p>The study develops an iterative thermodynamic model using MATLAB with thermophysical properties obtained from REFPROP. Operating-condition sensitivity is investigated for condenser and evaporator temperatures and for an ejector-related pressure-difference parameter. Calculated results are compared with published reference data.</p>
+<p>A regression-tree predictor and genetic algorithm are subsequently used to explore favorable operating conditions. The final design stage determines preliminary ejector dimensions using literature-based correlations and represents the resulting geometry in SolidWorks.</p>
+<p><strong>Research objective:</strong> Assess refrigeration-cycle performance, identify favorable numerical operating conditions and establish an initial geometric design for a two-phase ejector.</p>
+</div>
+<aside aria-label="Report information" class="report-facts">
+<h2>Report Details</h2>
+<dl>
+<dt>Researcher</dt><dd>Hamid Motallebi</dd>
+<dt>Supervisor</dt><dd>Dr. Behrang Sajadi</dd>
+<dt>Institution</dt><dd>School of Mechanical Engineering, University of Tehran</dd>
+<dt>Report Type</dt><dd>Undergraduate Specialization Project</dd>
+<dt>Submission Date</dt><dd>31 July 2024</dd>
+<dt>Primary Methods</dt><dd>Thermodynamic-cycle modeling, parametric analysis, numerical optimization</dd>
+</dl>
+</aside>
+</div>
+</section>
+<section class="container document-section" id="methods">
+<div class="section-heading"><span class="section-index">02</span><h2>Methodology</h2></div>
+<div class="method-row">
+<div class="method-mark">I.</div>
+<div><h3>Cycle Formulation</h3><p>Governing thermodynamic relations and one-dimensional ejector-component assumptions were established. Refrigerant state properties were evaluated through the REFPROP interface in MATLAB.</p></div>
+</div>
+<div class="method-row">
+<div class="method-mark">II.</div>
+<div><h3>Iterative Numerical Solution and Validation</h3><p>The simulation iterates on entrainment ratio and refrigerant state conditions to satisfy convergence requirements. COP predictions were compared with data digitized from the reference literature.</p></div>
+</div>
+<div class="method-row">
+<div class="method-mark">III.</div>
+<div><h3>Performance Modeling and Optimization</h3><p>A regression-tree model was trained in MATLAB to estimate COP as a function of condenser temperature, evaporator temperature and the pressure-difference parameter. Five-fold cross-validation was used to evaluate prediction error, followed by a genetic-algorithm search.</p></div>
+</div>
+<div class="method-row">
+<div class="method-mark">IV.</div>
+<div><h3>Preliminary Ejector Geometry</h3><p>Nozzle, mixing-section and diffuser dimensions were estimated using published correlations and design charts. The resulting geometry and drawings were modeled in SolidWorks.</p></div>
+</div>
+<p class="notes">Methodological scope: the submitted report documents a thermodynamic-cycle model and a preliminary component design. It does <strong>not</strong> document a resolved CFD field simulation, fabrication, or completed experimental testing of the ejector.</p>
+</section>
+<section class="container document-section" id="findings">
+<div class="section-heading"><span class="section-index">03</span><h2>Selected Computational Findings</h2></div>
+<p>The values below are reported numerical outcomes from the submitted undergraduate report and should not be interpreted as experimental measurements.</p>
+<table aria-label="Selected computational findings from the project report" class="result-table">
+<caption>Table 1. Summary of selected modeling outputs and observations.</caption>
+<thead><tr><th scope="col">Item</th><th scope="col">Reported result</th></tr></thead>
+<tbody>
+<tr><td><strong>Model validation</strong></td><td>Maximum relative COP error of approximately 4% compared with reference data; around 90% of evaluated points had an error below 1% (report p. 41).</td></tr>
+<tr><td><strong>Operating-parameter study</strong></td><td>Model sensitivity assessed for condenser temperature, evaporator temperature and ejector pressure difference using COP and VCC outputs (pp. 36–39).</td></tr>
+<tr><td><strong>Heat recuperation</strong></td><td>The modeled maximum COP change from adding a heat recuperator was approximately 2% within the investigated conditions (p. 42).</td></tr>
+<tr><td><strong>Regression training grid</strong></td><td>A parameter grid containing 86,100 input combinations was specified for model training (p. 28).</td></tr>
+<tr><td><strong>Optimization output</strong></td><td>The report gives a model-predicted maximum COP of 8.68 for its selected bounds and assumptions (p. 47).</td></tr>
+<tr><td><strong>Preliminary CAD design</strong></td><td>Two-phase ejector geometry constructed in SolidWorks from estimated section dimensions and angles (pp. 50–51).</td></tr>
+</tbody>
+</table>
+<p class="notes">All performance figures depend on the model formulation, numerical assumptions and input conditions described in the PDF. Validation uses published data rather than new laboratory measurements.</p>
+</section>
+<section class="container document-section" id="figures">
+<div class="section-heading"><span class="section-index">04</span><h2>Selected Figures and Engineering Results</h2></div>
+<p>The following figures are reproduced from my submitted report. Figure numbers and printed page references follow the source report; the full PDF is linked below.</p>
+<div class="figure-grid">
+<figure class="figure"><div class="figure-media"><img alt="Calculated coefficient of performance against ejector pressure difference" loading="lazy" src="cop_pressure.webp"/></div><figcaption><strong>Figure 14.</strong> Modeled COP response to pressure-difference variation (report p. 37).</figcaption></figure>
+<figure class="figure"><div class="figure-media"><img alt="Calculated coefficient of performance as condenser temperature varies" loading="lazy" src="cop_condenser.webp"/></div><figcaption><strong>Figure 16.</strong> Modeled COP as a function of condenser temperature (report p. 38).</figcaption></figure>
+<figure class="figure"><div class="figure-media"><img alt="Calculated coefficient of performance as evaporator temperature varies" loading="lazy" src="cop_evaporator.webp"/></div><figcaption><strong>Figure 18.</strong> Modeled COP as a function of evaporator temperature (report p. 39).</figcaption></figure>
+<figure class="figure"><div class="figure-media"><img alt="Relative error in modeled COP against a reference dataset" loading="lazy" src="validation_error.webp"/></div><figcaption><strong>Figure 22.</strong> Relative error of calculated COP compared with published reference data (report p. 41).</figcaption></figure>
+<figure class="figure"><div class="figure-media"><img alt="Percentage COP change associated with adding a heat recuperator" loading="lazy" src="recuperator_gain.webp"/></div><figcaption><strong>Figure 25.</strong> Percentage COP change from adding a heat recuperator (report p. 42).</figcaption></figure>
+<figure class="figure"><div class="figure-media"><img alt="SolidWorks preliminary geometry of a two-phase ejector" loading="lazy" src="ejector_cad.webp"/></div><figcaption><strong>Figure 31.</strong> SolidWorks model of the preliminary two-phase ejector geometry (report p. 50).</figcaption></figure>
+</div>
+</section>
+<section class="container document-section" id="full-report">
+<div class="section-heading"><span class="section-index">05</span><h2>Complete Undergraduate Project Report</h2></div>
+<div class="report-cta">
+<p><strong>Thermodynamic Design and Optimization of a Vapor-Compression Refrigeration Cycle with Ejector Expansion.</strong> University of Tehran, July 2024, 72 pages.</p>
+<p>The full document contains assumptions, governing equations, numerical procedures, comparison with published data, optimization, preliminary geometry, references and MATLAB code appendices.</p>
+<p><a class="link-plain filled" href="Hamid_Motallebi_BSc_Project.pdf" rel="noopener" target="_blank">Open Full Report (PDF)</a><a class="link-plain" download="" href="Hamid_Motallebi_BSc_Project.pdf">Download PDF</a></p>
+<div class="reference-strip"><p><strong>Supervisor:</strong> Dr. Behrang Sajadi<br/><strong>Researcher:</strong> Hamid Motallebi<br/><strong>Correspondence:</strong> <a href="mailto:hamidmotallebi2002@gmail.com">hamidmotallebi2002@gmail.com</a></p></div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><span>© 2026 Hamid Motallebi · Undergraduate Research Project</span><span><a href="index.html">Return to Academic Research Portfolio</a></span> <span>All nine projects are linked from the <a href="index.html#projects">portfolio home page</a>.</span><span class="footer-contact"><a href="mailto:hamidmotallebi2002@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/hamid-motallebi-405380208/" rel="noopener noreferrer" target="_blank">LinkedIn</a></span></div></footer>
 </body>
 </html>
