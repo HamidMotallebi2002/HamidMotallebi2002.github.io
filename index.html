@@ -3,112 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research portfolio of Hamid Motallebi, M.Sc. student in Mechanical Engineering – Energy Conversion at the University of Tehran. Research in CFD, thermal-fluid systems, numerical methods, and refrigeration.">
-  <meta name="theme-color" content="#10283d">
-  <title>Hamid Motallebi | Mechanical Engineering Research</title>
-  <style>
-    :root { --navy:#10283d; --navy2:#173b53; --teal:#0e7982; --ink:#1b3042; --muted:#5a6e7b; --line:#deeaee; --paper:#fff; --background:#f5f9fa; --accent:#dceff0; --max:1060px; }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; background:var(--background); color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
-    a { color:var(--teal); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    a:focus-visible { outline:3px solid #e0b663; outline-offset:3px; }
-    .container { width:min(calc(100% - 40px),var(--max)); margin:auto; }
-    .top { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.97); border-bottom:1px solid var(--line); }
-    .navigation { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { color:var(--navy); font-weight:800; letter-spacing:-.02em; font-size:1.04rem; }
-    nav { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:8px 22px; }
-    nav a { font-size:.91rem; font-weight:600; color:#365265; }
-    .hero { background:linear-gradient(128deg,#10283d,#1b4a5b 70%,#206b70); color:#fff; padding:90px 0 82px; position:relative; overflow:hidden; }
-    .hero:after { content:""; position:absolute; width:380px; height:380px; border:64px solid rgba(255,255,255,.05); border-radius:50%; right:-135px; top:-170px; pointer-events:none; }
-    .eyebrow { color:#a9e0dd; font-weight:700; letter-spacing:.13em; text-transform:uppercase; font-size:.76rem; margin:0 0 14px; }
-    h1 { font-size:clamp(2.7rem,6vw,4.45rem); line-height:1.12; letter-spacing:-.045em; margin:0 0 14px; }
-    .subheading { font-size:clamp(1.08rem,2.2vw,1.32rem); color:#d5e8ed; margin:0 0 17px; font-weight:500; }
-    .intro { max-width:720px; color:#e0ecef; margin:0 0 25px; }
-    .actions { display:flex; flex-wrap:wrap; gap:11px; }
-    .button { display:inline-flex; align-items:center; min-height:42px; border-radius:7px; padding:9px 18px; font-weight:700; font-size:.92rem; background:#fff; color:var(--navy); }
-    .button.secondary { background:transparent; color:#fff; border:1px solid #a1c7c9; }
-    .button:hover { text-decoration:none; opacity:.9; }
-    section { padding:57px 0 0; scroll-margin-top:90px; }
-    h2 { color:var(--navy); font-size:clamp(1.55rem,3.5vw,2rem); letter-spacing:-.025em; margin:0 0 13px; line-height:1.25; }
-    h3 { color:var(--navy); font-size:1.04rem; line-height:1.35; margin:0 0 9px; }
-    .section-lead { color:var(--muted); margin:0 0 23px; max-width:770px; }
-    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
-    .card { background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:24px; box-shadow:0 4px 18px rgba(16,40,61,.025); }
-    .card p { margin:0; color:var(--muted); font-size:.92rem; }
-    .tag { display:inline-block; background:#e8f4f4; color:#08666c; font-size:.73rem; font-weight:750; padding:3px 9px; border-radius:4px; margin-bottom:13px; letter-spacing:.015em; }
-    .pills { display:flex; flex-wrap:wrap; gap:10px; }
-    .pill { border-radius:7px; padding:8px 12px; background:#e7f1f2; color:#255b67; font-size:.9rem; font-weight:550; }
-    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-    .item { margin:0 0 20px; }
-    .item:last-child { margin-bottom:0; }
-    .item strong { color:var(--navy); }
-    .item p { margin:5px 0 0; color:var(--muted); font-size:.94rem; }
-    .status { font-size:.76rem; color:#306976; font-weight:700; }
-    .contact { background:#e6f1f2; border:1px solid #cfebec; border-radius:12px; padding:25px; }
-    .contact p { margin:0 0 8px; }
-    footer { text-align:center; border-top:1px solid var(--line); margin-top:60px; padding:20px 0 32px; color:var(--muted); font-size:.83rem; }
-    @media (max-width:820px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } .two-col { grid-template-columns:1fr; } .hero { padding:65px 0; } }
-    @media (max-width:550px) { .cards { grid-template-columns:1fr; } .navigation { align-items:flex-start; padding:13px 0; flex-direction:column; gap:8px; } nav { justify-content:flex-start; gap:5px 15px; } nav a { font-size:.82rem; } .hero { padding:55px 0; } .container { width:min(calc(100% - 28px),var(--max)); } section { padding-top:44px; } }
-  </style>
+  <meta name="description" content="Academic research portfolio of Hamid Motallebi, M.Sc. student in Mechanical Engineering – Energy Conversion at the University of Tehran. Selected projects in CFD, numerical methods and thermal-fluid engineering.">
+  <meta name="theme-color" content="#17334f">
+  <title>Hamid Motallebi | Academic Research Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="top">
-    <div class="container navigation">
-      <a href="#home" class="brand">Hamid Motallebi</a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a><a href="#interests">Research</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#contact">Contact</a>
-      </nav>
+  <header class="site-header" id="top">
+    <div class="container header-upper">
+      <div><a class="header-name" href="index.html">Hamid Motallebi</a><span class="header-affiliation">School of Mechanical Engineering · University of Tehran</span></div>
+      <span class="header-context">Academic Research Portfolio</span>
     </div>
+    <div class="header-rule"></div>
+    <nav class="container primary-nav" aria-label="Main navigation">
+      <a href="#profile">Academic Profile</a><a href="#research">Research Interests</a><a href="#projects">Selected Projects</a><a href="#publications">Manuscripts</a><a href="#contact">Contact</a>
+    </nav>
   </header>
   <main>
-    <div class="hero" id="home">
-      <div class="container">
-        <p class="eyebrow">Academic Research Portfolio</p>
-        <h1>Hamid Motallebi</h1>
-        <p class="subheading">M.Sc. Student in Mechanical Engineering – Energy Conversion<br>University of Tehran</p>
-        <p class="intro">Research interests in computational fluid dynamics, numerical methods, thermal-fluid systems, multiphase flow, and energy-efficient engineering technologies. Interested in doctoral research opportunities beginning in Fall 2027.</p>
-        <div class="actions"><a class="button" href="#projects">Explore Projects</a><a class="button secondary" href="mailto:hamidmotallebi2002@gmail.com">Contact Me</a></div>
+    <div class="container document-top">
+      <p class="overline">Mechanical Engineering · Thermal-Fluid Sciences</p>
+      <h1>Hamid Motallebi</h1>
+      <p class="subtitle">M.Sc. Student in Mechanical Engineering — Energy Conversion</p>
+      <p class="lead">Research interests in computational fluid dynamics, numerical methods, multiphase flow, heat transfer and energy-efficient thermal-fluid systems.</p>
+      <div class="document-ident" aria-label="Academic details">
+        <div><span class="metadata-label">Institution</span><span class="metadata-value">University of Tehran, Iran</span></div>
+        <div><span class="metadata-label">Current M.Sc. GPA</span><span class="metadata-value">17.88 / 20.00</span></div>
+        <div><span class="metadata-label">Expected Graduation</span><span class="metadata-value">July 2027</span></div>
       </div>
     </div>
-    <section id="about"><div class="container">
-      <h2>About Me</h2>
-      <p class="section-lead">I am a second-year M.Sc. student in Mechanical Engineering – Energy Conversion at the University of Tehran (current GPA: 17.88/20). I earned my B.Sc. in Mechanical Engineering at the same university (16.81/20). My research combines CFD, numerical modeling, and thermodynamic analysis to investigate practical fluid-flow and energy-conversion problems. My anticipated M.Sc. graduation is July 2027.</p>
+
+    <section class="container document-section" id="profile">
+      <div class="section-heading"><span class="section-index">01</span><h2>Academic Profile</h2></div>
       <div class="two-col">
-        <div class="card"><h3>Research Experience</h3><p>Two-phase ejector-expansion refrigeration systems; ventilation and radiant cooling; computational fluid mechanics and hydrodynamic systems.</p></div>
-        <div class="card"><h3>Methods &amp; Software</h3><p>MATLAB, Python, C++; ANSYS Fluent and CFX, COMSOL, EES; finite volume and finite difference methods, multigrid and iterative solvers.</p></div>
+        <div class="prose">
+          <p>I am pursuing an M.Sc. in Mechanical Engineering (Energy Conversion) at the University of Tehran, where I previously received my B.Sc. in Mechanical Engineering. My work brings together numerical fluid mechanics, thermal-system modeling and engineering performance analysis.</p>
+          <p>My current master's research investigates a combined impinging-jet ventilation and radiant-cooling system under high latent loads. My undergraduate research examined the thermodynamic performance and preliminary design of a two-phase ejector-expansion refrigeration cycle.</p>
+          <p>I am interested in funded doctoral research opportunities beginning in Fall 2027.</p>
+        </div>
+        <table class="profile-facts" aria-label="Academic credentials and methods">
+          <tbody>
+            <tr><th scope="row">M.Sc.</th><td>Mechanical Engineering — Energy Conversion<br>University of Tehran (2025–2027, expected)</td></tr>
+            <tr><th scope="row">B.Sc.</th><td>Mechanical Engineering<br>University of Tehran (2020–2025)</td></tr>
+            <tr><th scope="row">Programming</th><td>MATLAB · Python · C++</td></tr>
+            <tr><th scope="row">Engineering software</th><td>ANSYS Fluent · ANSYS CFX · COMSOL · SolidWorks · EES</td></tr>
+            <tr><th scope="row">Numerical methods</th><td>Finite Volume · Finite Difference · Multigrid · Iterative Solvers</td></tr>
+          </tbody>
+        </table>
       </div>
-    </div></section>
-    <section id="interests"><div class="container">
-      <h2>Research Interests</h2>
-      <p class="section-lead">Areas of research interest, informed by my academic coursework and project experience.</p>
-      <div class="pills"><span class="pill">Computational Fluid Dynamics</span><span class="pill">Numerical Methods in Fluid Mechanics</span><span class="pill">Multiphase Flow</span><span class="pill">Heat Transfer</span><span class="pill">Thermal-Fluid Systems</span><span class="pill">Refrigeration &amp; HVAC</span></div>
-    </div></section>
-    <section id="projects"><div class="container">
-      <h2>Selected Projects</h2>
-      <p class="section-lead">Selected academic and research projects. Project-specific pages include selected methods, results, and figures; full reports are shared when approved for public release.</p>
-      <div class="cards">
-        <article class="card"><span class="tag">M.Sc. Thesis · Ongoing</span><h3>Impinging Jet Ventilation &amp; Radiant Cooling</h3><p>CFD modeling and parametric analysis under high latent loads to investigate thermal comfort and energy consumption.</p></article>
-        <article class="card"><span class="tag">B.Sc. Project · Detailed page</span><h3><a href="r1234yf-ejector.html">R1234yf Two-Phase Ejector Refrigeration</a></h3><p>Thermodynamic-cycle modeling with MATLAB/REFPROP, regression-assisted COP optimization, and ejector geometry design.</p><p style="margin-top:12px"><a href="r1234yf-ejector.html" style="font-weight:750">View project details →</a></p></article>
-        <article class="card"><span class="tag">Computational Fluid Dynamics</span><h3>NACA 0012 Airfoil Flow</h3><p>Numerical analysis of incompressible and subsonic compressible potential flow using MATLAB and the finite volume method.</p></article>
-        <article class="card"><span class="tag">Fluid Mechanics</span><h3>Flow over a Circular Cylinder</h3><p>Comparative numerical analysis of boundary-layer and Navier–Stokes flow using MATLAB and ANSYS Fluent.</p></article>
-        <article class="card"><span class="tag">Hydraulic Machinery</span><h3>Francis Turbine CFD Analysis</h3><p>Hydraulic design and CFD performance evaluation for a high-head Francis turbine using CFturbo and ANSYS CFX.</p></article>
-        <article class="card"><span class="tag">Energy Conversion</span><h3>Geothermal Organic Rankine Cycle</h3><p>Energy, exergy, and thermoeconomic assessment of a geothermal ORC with an internal heat exchanger.</p></article>
+    </section>
+
+    <section class="container document-section" id="research">
+      <div class="section-heading"><span class="section-index">02</span><h2>Research Interests</h2></div>
+      <p class="prose">The following areas represent my principal research interests, informed by academic projects and ongoing work.</p>
+      <ul class="interest-grid">
+        <li>Computational Fluid Dynamics (CFD)</li>
+        <li>Numerical Methods in Fluid Mechanics</li>
+        <li>Multiphase Flow and Ejector Systems</li>
+        <li>Convective Heat Transfer</li>
+        <li>Thermal-Fluid and Energy Systems</li>
+        <li>Refrigeration, HVAC and Thermal Comfort</li>
+      </ul>
+    </section>
+
+    <section class="container document-section" id="projects">
+      <div class="section-heading"><span class="section-index">03</span><h2>Selected Research and Engineering Projects</h2></div>
+      <p class="prose">A selection of research and course projects. A dedicated technical report page and the complete PDF are provided for the undergraduate ejector-expansion refrigeration project.</p>
+      <div class="project-row">
+        <div class="project-number">01.</div>
+        <div>
+          <p class="project-type">B.Sc. Research Project · Detailed Technical Report</p>
+          <h3 class="project-heading"><a href="r1234yf-ejector.html">Thermodynamic Design and Optimization of an R1234yf Ejector-Expansion Refrigeration Cycle</a></h3>
+          <p>MATLAB/REFPROP thermodynamic modeling, iterative solution of ejector-cycle equations, regression-assisted optimization and preliminary geometry design in SolidWorks.</p>
+          <div class="project-links"><a href="r1234yf-ejector.html">View project report</a><a href="Hamid_Motallebi_BSc_Project.pdf" target="_blank" rel="noopener">Full PDF (72 pages)</a></div>
+        </div>
+        <div><a href="r1234yf-ejector.html" aria-label="View ejector project"><img class="project-thumb" src="ejector_cad.webp" alt="SolidWorks representation of the two-phase ejector geometry" loading="lazy"></a><p class="project-aside">Figure from the undergraduate project report, p. 50</p></div>
       </div>
-    </div></section>
-    <section id="publications"><div class="container">
-      <h2>Publications &amp; Manuscripts</h2>
-      <div class="card">
-        <div class="item"><strong>Thermodynamic Optimization and Critical Separator Efficiency Thresholds for an R1234yf Ejector-Expansion Refrigeration Cycle</strong><p>Motallebi, H., Lamochi, A., &amp; Sajadi, B. (2026). <span class="status">Manuscript under review</span> — Journal of Computational Applied Mechanics.</p></div>
-        <div class="item"><strong>Robust Multi-Operating-Point Design of a Fixed-Geometry R1234yf Two-Phase Ejector-Expansion Refrigeration System under Separator Imperfections</strong><p>Motallebi, H., &amp; Sajadi, B. (2026). <span class="status">Manuscript in preparation</span>.</p></div>
+      <div class="project-row project-row-simple">
+        <div class="project-number">02.</div>
+        <div><p class="project-type">M.Sc. Thesis · Ongoing</p><h3 class="project-heading">Impinging Jet Ventilation and Radiant Cooling</h3><p>CFD modeling and parametric analysis of a combined ventilation and radiant-cooling system under high latent loads, with attention to thermal comfort and energy demand.</p></div>
       </div>
-    </div></section>
-    <section id="contact"><div class="container">
-      <h2>Contact</h2>
-      <div class="contact"><p>I welcome discussions about research collaboration and funded Ph.D. opportunities beginning in Fall 2027.</p><p><strong>Email:</strong> <a href="mailto:hamidmotallebi2002@gmail.com">hamidmotallebi2002@gmail.com</a></p><p><strong>GitHub:</strong> <a href="https://github.com/HamidMotallebi2002">github.com/HamidMotallebi2002</a></p></div>
-    </div></section>
+      <div class="project-row project-row-simple">
+        <div class="project-number">03.</div>
+        <div><p class="project-type">Computational Fluid Mechanics</p><h3 class="project-heading">Numerical Analysis of Flow over a NACA 0012 Airfoil</h3><p>Potential-flow modeling using MATLAB, the Finite Volume Method, Successive Over-Relaxation and grid generation.</p></div>
+      </div>
+      <div class="project-row project-row-simple">
+        <div class="project-number">04.</div>
+        <div><p class="project-type">Numerical Fluid Mechanics</p><h3 class="project-heading">Boundary-Layer and Navier–Stokes Flow over a Circular Cylinder</h3><p>Comparative numerical analysis with MATLAB, ANSYS Fluent, finite-difference discretization and tridiagonal solution methods.</p></div>
+      </div>
+      <div class="project-row project-row-simple">
+        <div class="project-number">05.</div>
+        <div><p class="project-type">Hydraulic Machinery</p><h3 class="project-heading">Design and CFD Performance Analysis of a Francis Turbine</h3><p>Hydraulic design and numerical performance evaluation of a high-head turbine using CFturbo, ANSYS CFX and associated meshing tools.</p></div>
+      </div>
+      <div class="project-row project-row-simple">
+        <div class="project-number">06.</div>
+        <div><p class="project-type">Thermal Energy Systems</p><h3 class="project-heading">Thermodynamic and Thermoeconomic Analysis of a Geothermal ORC</h3><p>Energy, exergy and thermoeconomic analysis of a geothermal organic Rankine cycle with an internal heat exchanger using EES and MATLAB.</p></div>
+      </div>
+    </section>
+
+    <section class="container document-section" id="publications">
+      <div class="section-heading"><span class="section-index">04</span><h2>Manuscripts and Research Outputs</h2></div>
+      <div class="manuscript"><p class="manuscript-title">Thermodynamic Optimization and Critical Separator Efficiency Thresholds for an R1234yf Ejector-Expansion Refrigeration Cycle</p><small>Motallebi, H., Lamochi, A., &amp; Sajadi, B. (2026). <strong>Manuscript under review</strong>, Journal of Computational Applied Mechanics.</small></div>
+      <div class="manuscript"><p class="manuscript-title">Robust Multi-Operating-Point Design of a Fixed-Geometry R1234yf Two-Phase Ejector-Expansion Refrigeration System under Separator Imperfections</p><small>Motallebi, H., &amp; Sajadi, B. (2026). <strong>Manuscript in preparation.</strong></small></div>
+      <p class="notes">The manuscript statuses shown above refer to works in progress; neither is presented here as an accepted or published journal article.</p>
+    </section>
+
+    <section class="container document-section" id="contact">
+      <div class="section-heading"><span class="section-index">05</span><h2>Contact and Academic Correspondence</h2></div>
+      <p>I welcome academic inquiries concerning collaborative research and funded Ph.D. opportunities for Fall 2027.</p>
+      <p><strong>Email:</strong> <a href="mailto:hamidmotallebi2002@gmail.com">hamidmotallebi2002@gmail.com</a><br>
+         <strong>GitHub:</strong> <a href="https://github.com/HamidMotallebi2002">github.com/HamidMotallebi2002</a></p>
+    </section>
   </main>
-  <footer><div class="container">© 2026 Hamid Motallebi · Academic Research Portfolio</div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Hamid Motallebi · Academic Research Portfolio</span><span>Last revised: November 2026</span></div></footer>
 </body>
 </html>
